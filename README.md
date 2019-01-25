@@ -1,3 +1,3 @@
 # opcmouse
 mouse
-OPC UA controlled mouse coordinates Raspberry PI based on FreeOpcUa/python-opcua
+OPC UA server that presents coordinates of a mouse on a Raspberry PI based on FreeOpcUa/python-opcua
