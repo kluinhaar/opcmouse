@@ -1,0 +1,18 @@
+#
+#
+case "${1:-}" in
+  stop)
+        echo "Stopping $(basename $0)."
+        killall $(basename $0)
+        ;;
+
+  start)
+        echo "Starting $(basename $0)."
+        python /root/$(basename $0)/$(basename $0).py &
+        ;;
+
+  *)
+        echo "Usage: $(basename $0) {start|stop}"
+        exit 1
+        ;;
+esac
